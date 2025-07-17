@@ -256,29 +256,7 @@
 
         <!-- ✅ REQUIRED LIBRARIES -->
 
-        <?php
-    if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        $name = $_POST['name'] ?? '';
-        $email = $_POST['email'] ?? '';
-        $phone = $_POST['phone'] ?? '';
-        $course = $_POST['course'] ?? '';
-        $message = $_POST['message'] ?? '';
-
-        $whatsappNumber = '919569956867';
-        $text = "Admission Inquiry:\n\n👤 Name: $name\n📞 Phone: $phone";
-        if (!empty($email)) $text .= "\n📧 Email: $email";
-        $text .= "\n🎓 Course: $course";
-        if (!empty($message)) $text .= "\n📝 Message: $message";
-
-        $url = "https://wa.me/$whatsappNumber?text=" . urlencode($text);
-
-        echo "<script>
-            alert('Thank you! Your form has been submitted. Our team will contact you soon.');
-            window.location.href = '$url';
-        </script>";
-        exit;
-    }
-    ?>
+        
 
         <section class="parallax cover-background" data-overlay-dark="4" data-background="assets/images/bg1.webp"
             style="background-image: url('assets/images/bg1.webp');">
