@@ -37,7 +37,7 @@ $(document).ready(function() {
         $.ajax({
             type: "POST",
             data: dataString,
-            url: "php/commentForm.php",
+            url: "php/commentForm.html",
             cache: false,
             success: function (d) {
                 $(".form-control").removeClass("success");

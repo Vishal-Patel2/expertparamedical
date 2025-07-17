@@ -77,7 +77,7 @@ $(document).ready(function() {
         $.ajax({
             type: "POST",
             data: dataString,
-            url: "php/appointmentForm.php",
+            url: "php/appointmentForm.html",
             cache: false,
             success: function (d) {
                 $(".form-control").removeClass("success");

@@ -3,7 +3,7 @@
  * Scroll smooth to any element in your DOM.
  *
  * Copyright (c) 2012 Yannick Albert (http://yckart.com)
- * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php).
+ * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.html).
  * 2013/02/17
  **/
 $.scrollTo = $.fn.scrollTo = function(x, y, options){
