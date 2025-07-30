@@ -52,7 +52,7 @@
     <link href="assets/css/responsive.css" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6JZL0QCB5E"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-6JZL0QCB5E"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -62,7 +62,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-6JZL0QCB5E');
-    </script>
+    </script> -->
     <!--website schema markup-->
     <script type="application/ld+json">
     {
@@ -95,7 +95,7 @@
     <div id="page" class="page">
         <!-- HEADER -->
         <!-- HEADER START -->
-        <header id="header" class="header">
+        <header id="header" class="header ">
 
             <!-- 📢 DESKTOP HEADER (≥992px) -->
             <div class="desktop-header d-none d-lg-block">
@@ -208,6 +208,19 @@
         </header>
         <!-- HEADER END -->
 
+        <style>
+            /* Make only the navbars sticky */
+            .desktop-navbar,
+            .mobile-header {
+                position: sticky;
+                top: 0;
+                z-index: 999;
+                background-color: rgb(0, 25, 51);
+                /* Your navbar color */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+
         <!-- ✅ STYLES -->
         <style>
             /* Navbar link hover */
@@ -273,7 +286,7 @@
         <section class="mob-block">
             <div id="" class="" data-ride="">
                 <a href="course.html">
-                    <img src="assets/images/carousel/Banner1.jpg" width="100%" height="100%" style="width:100%"
+                    <img src="assets/images/carousel/Banner1.jpg" style="width:116%; height: 190px;"
                         alt="slide" /></a>
             </div>
         </section>
@@ -1078,7 +1091,7 @@
                 color: #333;
                 display: flex;
                 align-items: center;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
 
             .choose-list li img {
@@ -1103,7 +1116,7 @@
 
                 .choose-list li {
                     font-size: 15px;
-                    justify-content: center;
+                    justify-content: flex-start;
                     text-align: center;
                 }
 
@@ -1944,8 +1957,9 @@
             z-index: 100;
         }
     </style>
+
     <!-- Footer Start -->
-    <footer class="finverge-footer">
+    <footer class="expert-footer">
         <div class="footer-container">
             <div class="footer-columns">
                 <!-- Column 1: About + Social -->
@@ -1996,17 +2010,43 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>Copyright © 2025
-                    <span class="fw-7">Expert Paramedical Institute & Research Center</span>. All Rights Reserved.
+            <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+                <p class="mb-0 p-sm">
+                    © 2025
+                    <span class="fw-7">
+                        <a href="https://expertparamedical.com/" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            Expert Paramedical Institute & Research Center
+                        </a>
+                    </span>. All Rights Reserved.
+                </p>
+                <p class="mb-0 p-sm" style="padding: 6px 42px;">
+                    Design & Developed by
+                    <a href="https://www.linkedin.com/in/vishal-patel22/" target="_blank"
+                        style="text-decoration: none;">
+                        Vishal Patel
+                    </a>
                 </p>
             </div>
+
         </div>
     </footer>
 
     <!-- Footer Styles -->
+
     <style>
-        .finverge-footer {
+        .footer-bottom {
+            padding: 10px 0;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer-bottom a:hover {
+            color: #007bff;
+        }
+    </style>
+    <style>
+        .expert-footer {
             background-color: #001933;
             color: #fff;
             padding: 40px 20px 20px;
@@ -2125,9 +2165,9 @@
     <!-- END PAGE CONTENT -->
     <!-- EXTERNAL SCRIPTS
       ============================================= -->
-  
+
     <script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   
+
     <script src="cdn.jsdelivr.net/npm/bootstrap%404.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
@@ -2136,7 +2176,7 @@
     <script src="assets/js/jquery.appear.js"></script>
     <script src="assets/js/jquery.stellar.min.js"></script>
     <script src="assets/js/menu.js"></script>
-  
+
     <script src="assets/js/jquery.scrollto.js"></script>
 
     <script src="cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -2144,10 +2184,10 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
-  
+
     <script src="assets/js/comment-form.js"></script>
     <script src="assets/js/appointment-form.js"></script>
-  
+
     <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/jquery.ajaxchimp.min.js"></script>
     <script src="assets/js/wow.js"></script>

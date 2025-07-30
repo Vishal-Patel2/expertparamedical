@@ -491,7 +491,7 @@
         </style>
 
         <!-- Footer Start -->
-        <footer class="finverge-footer">
+        <footer class="expert-footer">
             <div class="footer-container">
                 <div class="footer-columns">
                     <!-- Column 1: About + Social -->
@@ -542,17 +542,33 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="footer-bottom">
-                    <p>Copyright © 2025
-                        <span class="fw-7">Expert Paramedical Institute & Research Center</span>. All Rights Reserved.
-                    </p>
+                    <div class="container">
+                        <div class="footer-content">
+                            <p class="mb-0 text-center text-md-start">
+                                © 2025
+                                <a href="https://expertparamedical.com/" target="_blank" class="footer-link">
+                                    Expert Paramedical Institute & Research Center
+                                </a>. All Rights Reserved.
+                            </p>
+                            <p class="mb-0 text-center text-md-end">
+                                Design & Developed by
+                                <a href="https://www.linkedin.com/in/vishal-patel22/" target="_blank"
+                                    class="footer-link dev-name">
+                                    Vishal Patel
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </footer>
 
         <!-- Footer Styles -->
         <style>
-            .finverge-footer {
+            .expert-footer {
                 background-color: #001933;
                 color: #fff;
                 padding: 40px 20px 20px;
@@ -561,6 +577,7 @@
             .footer-container {
                 max-width: 1200px;
                 margin: auto;
+                padding: 0 15px;
             }
 
             .footer-columns {
@@ -577,7 +594,7 @@
 
             .footer-col h3 {
                 color: #bf9f5b;
-                margin-bottom: 10px;
+                margin-bottom: 12px;
             }
 
             .footer-col ul {
@@ -588,6 +605,7 @@
             .footer-col ul li {
                 margin-bottom: 8px;
                 font-size: 14px;
+                line-height: 1.5;
             }
 
             .footer-col ul li a {
@@ -610,50 +628,69 @@
             }
 
             .footer-bottom {
-                text-align: center;
                 padding-top: 20px;
                 margin-top: 30px;
-                border-top: 1px solid #ffffff;
+                border-top: 1px solid #ffffff30;
                 font-size: 14px;
-            }
-
-            .footer-bottom a {
-                color: #FFA500;
-                text-decoration: none;
-            }
-
-            .footer-bottom a:hover {
-                text-decoration: underline;
-            }
-
-            .nav-list li {
-                margin-bottom: 10px;
-            }
-
-            .nav-list a {
-                text-decoration: none;
                 color: #ccc;
-                font-weight: 500;
+            }
+
+            .footer-content {
                 display: flex;
+                flex-direction: row;
+                justify-content: space-between;
                 align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+                text-align: center;
             }
 
-            .nav-list a:hover {
+            .footer-link {
                 color: #fff;
+                text-decoration: none;
+                font-weight: 500;
             }
 
-            /* Mobile Responsive */
+            .footer-link:hover {
+                color: #FFA500;
+            }
+
+            .dev-name {
+                color: #FFA500;
+            }
+
+            /* -------- Responsive Media Queries -------- */
             @media (max-width: 768px) {
                 .footer-columns {
                     flex-direction: column;
+                    gap: 20px;
                 }
 
                 .footer-col {
+                    min-width: 100%;
                     margin-bottom: 20px;
                 }
 
+                .footer-content {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding: 10px 0;
+                    gap: 5px;
+                }
+
+                .footer-bottom {
+                    margin-top: 20px;
+                    padding-top: 14px;
+                }
+
                 .footer-col iframe {
-                    width: 100%;
+                    height: 180px;
+                }
+
+                .footer-col p,
+                .footer-col li {
+                    font-size: 14px;
                 }
             }
         </style>
@@ -671,9 +708,9 @@
     <!-- END PAGE CONTENT -->
     <!-- EXTERNAL SCRIPTS
       ============================================= -->
-  
+
     <script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   
+
     <script src="cdn.jsdelivr.net/npm/bootstrap%404.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
@@ -682,7 +719,7 @@
     <script src="assets/js/jquery.appear.js"></script>
     <script src="assets/js/jquery.stellar.min.js"></script>
     <script src="assets/js/menu.js"></script>
-  
+
     <script src="assets/js/jquery.scrollto.js"></script>
 
     <script src="cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -690,10 +727,10 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
-  
+
     <script src="assets/js/comment-form.js"></script>
     <script src="assets/js/appointment-form.js"></script>
-  
+
     <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/jquery.ajaxchimp.min.js"></script>
     <script src="assets/js/wow.js"></script>
